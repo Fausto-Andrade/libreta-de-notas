@@ -1,0 +1,84 @@
+*
+{
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+html, body
+{
+  color: white;
+  background-color: #1b1b32;
+  /* font-family: Lato, sans-serif; */
+}
+h1
+{
+  color: #1b1b32;
+  text-align: center;
+  margin: 20px 0;
+  text-shadow: 4px 4px 2px rgba(0,0,0,0.6);
+}
+.aplicacion-tareas 
+{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.logo-react
+{
+  margin: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.logo {
+  height: 20vmin;
+  pointer-events: none;
+}
+
+/* Lista de tareas*/
+.tareas-lista-principal
+{
+  width: 340px;
+  min-height: 600px;
+  background-color: #c4c6d3;
+  padding: 25px;
+  margin: 10px;
+  border-radius: 26px;
+  border: 4px solid #6AB8E7;
+}
+
+/* movimiento del logo */
+@media (prefers-reduced-motion: no-preference) {
+  .logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media screen and (min-width: 768px){ 
+  
+  .tareas-lista-principal
+  {
+    width: 500px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 1024px){ 
+  
+  .tareas-lista-principal
+  {
+    width: 600px;
+    margin: 0 auto;
+  }
+}
